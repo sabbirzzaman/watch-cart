@@ -1,8 +1,11 @@
 .product {
     background-color: #FFF;
     text-align: center;
-    padding: 40px 30px;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.product-info {
+    padding: 30px 30px;
 }
 
 .product img {
@@ -14,10 +17,14 @@
 }
 
 .product button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     background-color: #047857;
     color: #FFF;
-    padding: 8px 30px;
-    margin-top: 20px;
+    width: 100%;
+    padding: 10px 0;
     border: none;
     cursor: pointer;
     transition: .3s ease-in-out;
