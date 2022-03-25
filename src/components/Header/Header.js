@@ -16,7 +16,7 @@ const Header = () => {
                 <a href="/shop">Shop</a>
                 <a href="/brand">Brand</a>
             </div>
-            <div className="cart">
+            <div className="cart-icon">
                 <FontAwesomeIcon icon={faCartShopping} />
             </div>
         </nav>

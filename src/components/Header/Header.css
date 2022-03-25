@@ -4,15 +4,21 @@ a {
 }
 
 nav {
+    max-width: 1300px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    background-color: #f8fafc;
+    height: 80px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
     border-bottom: 2px solid #f0f0f0;
 }
 
 h3 a {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .header {
@@ -26,14 +32,14 @@ h3 a {
 }
 
 .header a:hover {
-    color: #e74c3c;
+    color: #047857;
 }
 
-.cart svg {
+.cart-icon svg {
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 
-.cart svg:hover {
-    color: #e74c3c;
+.cart-icon svg:hover {
+    color: #047857;
 }
