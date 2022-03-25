@@ -1,0 +1,39 @@
+a {
+    text-decoration: none;
+    color: #2c2c2c;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+h3 a {
+    font-size: 24px;
+}
+
+.header {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.header a {
+    transition: 0.3s ease-in-out;
+}
+
+.header a:hover {
+    color: #e74c3c;
+}
+
+.cart svg {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.cart svg:hover {
+    color: #e74c3c;
+}
