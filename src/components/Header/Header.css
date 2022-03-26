@@ -38,6 +38,7 @@ h3 a {
     cursor: pointer;
 }
 
+/* Medium devices (phones, 992px and down) */
 @media only screen and (max-width: 992px) {
     .navigation {
         margin-bottom: 10px;

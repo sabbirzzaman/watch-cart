@@ -2,6 +2,7 @@ import React from 'react';
 import './LuckyItem.css';
 
 const LuckyItem = ({ product }) => {
+    // product data destructure
     const { name, image } = product;
 
     return (

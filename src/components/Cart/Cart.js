@@ -4,9 +4,10 @@ import LuckyItem from '../LuckyItem/LuckyItem';
 import './Cart.css';
 
 const Cart = ({ cart, cartHandle }) => {
-
+    // Store random product items 
     const [luckyItem, setLuckyItem] = useState([]);
 
+    // Get the random product item
     const chooseItem = () => {
         const itemIndex = Math.floor(Math.random() * cart.length);
         const chosenItem = cart[itemIndex];

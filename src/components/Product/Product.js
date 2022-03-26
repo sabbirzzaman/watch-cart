@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 
 const Product = ({ watch, addToCart }) => {
+    // product data destructure
     const {image, name, price} = watch;
     
     return (

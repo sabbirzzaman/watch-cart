@@ -4,12 +4,16 @@ import Product from '../Product/Product';
 import './Shop.css';
 
 const Shop = () => {
+    // Store product and cart data
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
 
+    // Handle add to cart
     const addToCart = (products) => {
+        // Set cart limit
         const cartLimit = 3;
 
+        // Check if the product already added
         const idExist = cart.find((watch) => watch.id === products.id);
 
         if (idExist) {
@@ -24,6 +28,7 @@ const Shop = () => {
         }
     };
 
+    // Load data
     useEffect(() => {
         fetch('data.json')
             .then((res) => res.json())
@@ -41,38 +46,40 @@ const Shop = () => {
                     ></Product>
                 ))}
 
-                <div className='question'>
+                <div className="question">
                     <h2>How react works?</h2>
                     <p>
-                        React.js is a javascript library that creates user interfaces. You can use it for building single page applications or complex applications. We can say react is a cullection of javascript code that help us to 
+                        React.js is a javascript library that creates user
+                        interfaces. It's an open-source project. We can use it
+                        for building single-page applications or complex
+                        applications. We can say react is a collection of
+                        javascript code that helps us to build web pages, mobile
+                        applications and web applications, etc. React code works
+                        in a declarative way. It makes the code easy to use and
+                        easy to debug. React is a component-based library. We
+                        can build a component and reuse it again and again.
                     </p>
                 </div>
-                <div className='question'>
+                <div className="question">
                     <h2>Props vs State</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
+                        Props are read-only components. We can use Props to pass
+                        data from on component to another component. And the
+                        state is work like a storage. It returns a variable
+                        where we can store the data and also return a function.
+                        We can update the data using the function. And we can't
+                        update or modify the props data inside a component.
                     </p>
                 </div>
-                <div className='question'>
+                <div className="question">
                     <h2>How useState works?</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
+                        useState is a react hook. Basically we can use useState
+                        for storing data. It returns a variable and a function.
+                        We can store, edit and modify data on the variable using
+                        the function. useState is mutable. And it behave
+                        asynchronous. It hold information about component. And
+                        we can't access the state from the child components.
                     </p>
                 </div>
             </div>

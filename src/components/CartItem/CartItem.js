@@ -1,8 +1,8 @@
 import React from 'react';
 import './CartItem.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const CartItem = ({ item }) => {
+    // product data destructure
     const { name, image } = item;
 
     return (
