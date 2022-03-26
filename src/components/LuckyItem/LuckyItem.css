@@ -1,0 +1,12 @@
+.lucky-item {
+    background-color: #FFF;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+}
+
+.lucky-item img {
+    width: 30px;
+}

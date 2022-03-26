@@ -1,13 +1,13 @@
 .cart {
     position: sticky;
     top: 80px;
-    display: flex;
+    display: grid;
+    grid-template-rows: 75% 25%;
     flex-direction: column;
-    justify-content: space-between;
     height: calc(100vh - 80px);
     background-color: #047857;
     color: white;
-    padding: 50px 20px;
+    padding: 30px 20px;
 }
 
 .cart h2 {
@@ -20,19 +20,19 @@
 
 .choose-btn {
     background-color: #34495e;
-    margin-bottom: 10px;
     color: #FFF;
     width: 100%;
-    padding: 10px 0;
+    padding: 8px 0;
     border: none;
     cursor: pointer;
 }
 
 .choose-again {
     background-color: #e74c3c;
+    margin: 10px 0;
     color: #FFF;
     width: 100%;
-    padding: 10px 0;
+    padding: 8px 0;
     border: none;
     cursor: pointer;
 }

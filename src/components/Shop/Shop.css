@@ -12,3 +12,35 @@
     margin: 40px 0;
     padding-right: 30px;
 }
+
+/* Medium devices (phones, 992px and down) */
+@media only screen and (max-width: 992px) {
+    a, p {
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .shop-container {
+        max-width: 325px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 55% 45%;
+        gap: 20px;
+
+    }
+    
+    .products {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin: 20px 0;
+        padding-right: 0;
+    }
+}

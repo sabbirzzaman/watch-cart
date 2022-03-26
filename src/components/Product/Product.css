@@ -1,11 +1,12 @@
 .product {
-    background-color: #FFF;
+    background-color: #fff;
     text-align: center;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+        0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 .product-info {
-    padding: 30px 30px;
+    padding: 20px;
 }
 
 .product img {
@@ -22,14 +23,18 @@
     align-items: center;
     gap: 10px;
     background-color: #047857;
-    color: #FFF;
+    color: #fff;
     width: 100%;
     padding: 10px 0;
     border: none;
     cursor: pointer;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .product button:hover {
     background-color: #10b981;
+}
+
+/* Medium devices (phones, 992px and down) */
+@media only screen and (max-width: 992px) {
 }

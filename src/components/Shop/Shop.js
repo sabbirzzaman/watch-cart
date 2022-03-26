@@ -8,9 +8,16 @@ const Shop = () => {
     const [cart, setCart] = useState([]);
 
     const addToCart = (products) => {
-        const newCart = [...cart, products]
-        setCart(newCart);
-    }
+        const cartLimit = 3;
+
+        const newCart = [...cart, products];
+
+        if (cart.length <= cartLimit) {
+            setCart(newCart);
+        } else {
+            alert(`You can't choose then 4 items.`);
+        }
+    };
 
     useEffect(() => {
         fetch('data.json')
@@ -20,9 +27,13 @@ const Shop = () => {
 
     return (
         <div className="shop-container">
-            <div className='products'>
+            <div className="products">
                 {products.map((product) => (
-                    <Product watch={product} addToCart={addToCart} key={product.id}></Product>
+                    <Product
+                        watch={product}
+                        addToCart={addToCart}
+                        key={product.id}
+                    ></Product>
                 ))}
             </div>
 

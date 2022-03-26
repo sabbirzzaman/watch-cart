@@ -43,3 +43,14 @@ h3 a {
 .cart-icon svg:hover {
     color: #047857;
 }
+
+@media only screen and (max-width: 992px) {
+    nav {
+        max-width: 325px;
+        padding: 0;
+    }
+
+    .header {
+        display: none;
+    }
+}
