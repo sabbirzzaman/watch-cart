@@ -3,7 +3,8 @@ import CartItem from '../CartItem/CartItem';
 import LuckyItem from '../LuckyItem/LuckyItem';
 import './Cart.css';
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, cartHandle }) => {
+
     const [luckyItem, setLuckyItem] = useState([]);
 
     const chooseItem = () => {
@@ -19,8 +20,8 @@ const Cart = ({ cart }) => {
                 <button onClick={chooseItem} className="choose-btn">
                     Choose For Me
                 </button>
-                <button className="choose-again">
-                    Choose Again
+                <button onClick={() => cartHandle([])} className="choose-again">
+                    Remove Cart
                 </button>
 
                 <h2>Your Cart</h2>

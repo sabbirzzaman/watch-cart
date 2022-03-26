@@ -10,12 +10,17 @@ const Shop = () => {
     const addToCart = (products) => {
         const cartLimit = 3;
 
-        const newCart = [...cart, products];
+        const idExist = cart.find((watch) => watch.id === products.id);
 
-        if (cart.length <= cartLimit) {
-            setCart(newCart);
+        if (idExist) {
+            alert(`Item is already selected!`);
         } else {
-            alert(`You can't choose then 4 items.`);
+            const newCart = [...cart, products];
+            if (cart.length <= cartLimit) {
+                setCart(newCart);
+            } else {
+                alert(`You can't choose more then 4 items!`);
+            }
         }
     };
 
@@ -37,7 +42,7 @@ const Shop = () => {
                 ))}
             </div>
 
-            <Cart cart={cart}></Cart>
+            <Cart cart={cart} cartHandle={setCart}></Cart>
         </div>
     );
 };
