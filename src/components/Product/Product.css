@@ -1,16 +1,17 @@
 .product {
     background-color: #fff;
     text-align: center;
+    border-radius: 8px;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
         0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 .product-info {
-    padding: 20px;
+    padding: 30px 20px;
 }
 
 .product img {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .product h3 {
@@ -28,13 +29,10 @@
     padding: 10px 0;
     border: none;
     cursor: pointer;
+    border-radius: 0 0 8px 8px;
     transition: 0.3s ease-in-out;
 }
 
 .product button:hover {
     background-color: #10b981;
-}
-
-/* Medium devices (phones, 992px and down) */
-@media only screen and (max-width: 992px) {
 }

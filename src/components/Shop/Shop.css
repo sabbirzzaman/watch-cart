@@ -9,7 +9,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin: 40px 0;
+    margin-bottom: 40px;
+    margin-top: 10px;
     padding-right: 30px;
 }
 
@@ -29,15 +30,11 @@
 
     .shop-container {
         max-width: 325px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 55% 45%;
-        gap: 20px;
-
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
     
     .products {
-        display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
         margin: 20px 0;

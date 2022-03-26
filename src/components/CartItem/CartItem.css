@@ -1,27 +1,13 @@
 .cart-item {
-    background-color: #FFF;
-    color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.item-info {
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     gap: 10px;
     padding: 8px;
 }
 
-.item-info img {
+.cart-item img {
     width: 30px;
-}
-
-.remove-btn {
-    padding: 15px 15px;
-    border: none;
-    cursor: pointer;
 }
 
 @media only screen and (max-width: 992px) {
@@ -29,11 +15,7 @@
         font-size: 20px;
     }
 
-    .item-info img {
+    .cart-item img {
         width: 20px;
-    }
-
-    .remove-btn {
-        display: none;
     }
 }
